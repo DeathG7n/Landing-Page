@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.flex-column{
+    flex-direction: column;
+}
+h4{
+    font-family: "Prata", sans-serif;
+    font-size: 19px;
+    font-weight: 50;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+nav{
+    word-spacing: 20px;
+}
+body{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+}
+button{
+    border: 1px solid #eafb50;
+    background-color: yellow;
+    width: 10.6875em;
+    height: 3.625em;
+    font-size: 16px;
+}
+header{
+    margin: 40px 20px;
+}
+.flex-container{
+    display: flex;
+}
+.flex-wrap{
+    flex-flow: wrap;
+}
+.ai-c{
+    align-items: center;
+}
+.jc-sb{
+    justify-content: space-between;
+}
+.jc-sa{
+    justify-content: space-around;
+}
+.h1-large{
+    font-size: 33px;
+    font-family: "Prata", sans-serif;
+}
+.h2{
+    font-family: "Prata", sans-serif;
+    font-size: 30px;
+}
+.p-norm{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+.p-small{
+    font-family: "Inter", sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+}
+.p-margin{
+    margin: 20px 0px;
+}
+
+.no-margin{
+    margin: 0;
+    background-color: #2e3038;
+}
+.f-svg svg{
+    margin: 5px;
+}
+footer{
+    display: flex;
+    justify-content: flex-end;
+    min-height: 60px;
+}
+.box{
+    margin: 20px 0px;
+}
+@media only screen and (max-width: 648px){
+   
+    .hide-for-sm{
+        display: none;
+    }
+    .sec-margin{
+        margin: 50px 20px;
+    }
+    .svg-margin{
+        margin: 60px 40px;
+    }
+    .svg{
+        margin: 5px 5px 15px 5px;
+    }
+    img{
+        min-width: 100%;
+    }
+    .f-h4{
+        margin-right: auto;
+        margin-left: 20px;
+    }
+    .f-svg{
+        margin: 0px 20px 0px 0px;
+    }
+    .no-margin .box{
+        margin: 50px 20px;
+    }
+    
+}
+@media only screen and (min-width: 648px) and (max-width: 992px){
+    .hide-for-sm{
+        display: none;
+    }
+    header{
+        margin: 40px 40px;
+    }
+    .sec-margin{
+        margin: 50px 40px;
+    }
+    .svg-margin{
+        margin: 60px 40px
+    }
+    .svg{
+        margin: 5px 50px 15px 50px;
+    }
+    .f-h4{
+        margin-right: auto;
+        margin-left: 40px;
+    }
+    .f-svg{
+        margin: 0px 40px 0px 0px;
+    }
+    img{
+        min-width: 100%;
+    }
+    .no-margin .box{
+        margin: 50px 40px;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1500px){
+    .hide-for-desk{
+        display: none;
+    }
+    header{
+        margin: 40px 60px;
+    }
+    .sec-margin{
+        margin: 50px 60px;
+    }
+    .svg-margin{
+        margin: 60px 40px;
+    }
+    .svg{
+        margin: 5px 50px 15px 50px;
+    }
+    .f-h4{
+        margin-right: auto;
+        margin-left: 40px;
+    }
+    .f-svg{
+        margin: 0px 40px 0px 0px;
+    }
+    .box{
+        max-width: 500px;
+        margin-top: 20px;
+    }
+    .box1{
+        margin-top: 20px;
+        margin-right: 40.5em;
+    }
+    img{
+        min-width: 500px;
+        height: 250px;
+       
+    }
+    .flex-row{
+        flex-direction: row;
+    }
+    section div{
+        max-width: 500px;
+    }
+    .no-margin .box{
+        margin: 50px 60px 50px 60px;
+    }
+    #item1{
+       order: 1;
+    }
+    #item2{
+        order: 3;
+    }
+    #item3{
+        order: 2;
+        margin-left: 210px;
+    }
+    #item4{
+        order: 4;
+        margin-left: 210px;
+    }
+    #item6{
+        margin-left: 150px;
+    }
+}
