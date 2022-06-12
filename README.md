@@ -1,2 +1,3 @@
+# Landing Page
 
-# Web-Developer-Portfoilo
+This is a responsive landing page made with HTML, CSS, Bootstrap and Javascript.

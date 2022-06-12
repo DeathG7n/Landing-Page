@@ -4,33 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="style.css">
     <title>Johnathan Specter</title>
 </head>
 <body>
     <header class="flex-container flex-row jc-sb ai-c" id="head-el">
         <h4>Johnathan Specter</h4>
-        <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="hide-for-desk" id="ham-el">
+        <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg" id="ham-el" onclick="myFunction()">
             <path d="M24 4H0V0H24V4ZM24 8H0V12H24V8ZM24 16H0V20H24V16Z" fill="white"/>
         </svg>
             
-        <nav class="hide-for-sm">
+        <nav id="myLinks">
             <a href="">Articles</a>
             <a href="">Chats</a>
             <a href="">Awards</a>
             <a href="">About</a>
+            <button class="hide-for-sm">Get in touch</button>
         </nav>
-        <button class="hide-for-sm">Get in touch</button>
+        
     </header>
     <main>
-        <section class="sec-margin box1">
+        <section class="sec-margin box1 hero">
             <h1 class="h1-large">Helping companies build better, scalable software.</h1>
             <p class="p-norm">Award-winning web developer and author, with over 15+ years of working experience
                 with Fortune 500 companies like Apple, Google, Facebook, and more.
             </p>
         </section>
-        <div  class="flex-container flex-row flex-wrap jc-sb svg-margin">
+        <div  class="grid">
             <svg class="svg" width="101" height="24" viewBox="0 0 101 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_6:120)">
             <path d="M58.0546 12.7717C58.0546 10.4016 57.04 8.30746 53.6087 8.30746C51.8483 8.30746 50.4498 8.80922 49.6916 9.2484L50.2473 11.1499C50.9454 10.7119 52.0593 10.3513 53.1106 10.3513C54.8477 10.3488 55.1323 11.3315 55.1323 11.9633V12.1154C51.3404 12.1092 48.9433 13.4194 48.9433 16.0877C48.9433 17.718 50.1603 19.2466 52.2875 19.2466C53.5854 19.2466 54.6821 18.7228 55.3372 17.8959H55.401C55.401 17.8959 55.8329 19.703 58.2214 19.0123C58.0999 18.2554 58.0546 17.458 58.0546 16.4888V12.7717ZM55.2256 15.2743C55.2256 15.4657 55.2097 15.6644 55.1532 15.8349C54.9348 16.5649 54.1816 17.1758 53.2443 17.1758C52.4531 17.1758 51.8323 16.728 51.8323 15.7896C51.8323 14.3542 53.4173 13.9592 55.2256 13.969" fill="#ADADAD"/>
@@ -98,30 +98,30 @@
             </defs>
             </svg>
         </div>
-        <section class="flex-container sec-margin flex-row flex-wrap">
-            <div class="box" id="item1">
+        <section class="grid-box">
+            <div class="box grid-b" id="item1">
                 <img src="Assets/Spense.png" alt="Spense" >
             </div>
-            <div class="box" id="item2">
+            <div class="box grid-b grid-p" id="item2">
                 <h2 class="h2">Spense.com </h2><br>
                 <p class="p-small">Rethinking the way writers get paid, an open-source platform designed to help writers <br> focus more on writing, and less on <em>when</em> and <em>how</em> they'll get paid. Project in collaboration <br> with Codewell.cc</p>
             </div>
-            <div class="box" id="item3">
+            <div class="box grid-b" id="item3">
                 <img src="Assets/YelpCamp.png" alt="YelpCamp" >   
             </div>
-            <div class="box" id="item4">
+            <div class="box grid-b grid-p" id="item4">
                 <h2 class="h2">YelpCamp.com </h2><br>
                 <p class="p-small">Allowing backpack travelers to perfectly plan their trip through an open-source platform similar to TripAdvisor. With over 1m MAU, YelpCamp has been the crowd's favorite in 2021</p>
             </div>
         </section>
         <section class="no-margin flex-container flex-row flex-wrap p-small">
-            <div class="box">
+            <div class="box hero1">
                 <h2 class="h2">A co-founder at one of the  world's largest communities.</h2>
                 <p class="p-margin">The combined experience have working at the top Fortune 500 companies has allowed to developer a skillset that helps me in not just development, but in every aspect of any business.
                 </p>
                 <p class="p-margin">I'm proud to announce that I am now working at one of the world's largest communities teaching young minds about how to sell yourself as a developer and open them to a whole new world of opportunities</p>
             </div>
-            <div class="box" id="item6">
+            <div class="box hero1" id="item6">
                 <p class="p-margin">As a developer, you have everything available to you and all that's holding you back is yourself.</p>
                 <p class="p-margin">A quote I live by perfectly illustrates what l mean.</p>
                 <p class="p-margin">"How big would you dream, if you <b>knew</b> you wouldn't fail?"<br>
@@ -129,8 +129,8 @@
                 <p class="p-margin">I'm happy to chat over coffee some time about how i can help your company.</p>
             </div>
         </section>
-        <section class="sec-margin">
-            <div class="box box1">
+        <section class="sec-margin ">
+            <div class="box box1 hero">
                 <h2 class="h2">Interested in working with me ?</h2>
                 <p class="p-margin p-small">I'm active on all social media platforms listed below, but you can also me an email and i will get back to you within 24-48 hours.</p>
             </div>

@@ -3,6 +3,18 @@
     padding: 0;
     overflow-x: hidden;
 }
+.grid{
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+}
+.grid-box{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+}
+#ham-el{
+    display: none;
+}
 .flex-column{
     flex-direction: column;
 }
@@ -86,11 +98,7 @@ footer{
 .box{
     margin: 20px 0px;
 }
-@media only screen and (max-width: 648px){
-   
-    .hide-for-sm{
-        display: none;
-    }
+@media only screen and (min-width: 360px) and (max-width: 648px){
     .sec-margin{
         margin: 50px 20px;
     }
@@ -113,11 +121,68 @@ footer{
     .no-margin .box{
         margin: 50px 20px;
     }
-    
-}
-@media only screen and (min-width: 648px) and (max-width: 992px){
-    .hide-for-sm{
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        justify-content: space-around;
+    }
+    .grid-box{
+        grid-template-columns: auto;
+        justify-content: space-around;
+    }
+
+    #myLinks{
+        font-size: 15px;
         display: none;
+        position: fixed;
+        padding: 10px;
+        width: 100%;
+        top: 70px;
+        left: 0;
+        margin-left: 12px;
+    }
+    #ham-el{
+        display: block;
+    }
+    .grid-b{
+        width: 90vw;
+        height: 300px;
+        margin: 0 20px;
+    }
+    .grid-p{
+        height: 250px;
+    }
+}
+@media only screen and (min-width: 648px) and (max-width:992px){
+    #ham-el{
+        display: block;
+    }
+    #myLinks{
+        font-size: 15px;
+        display: none;
+        position: fixed;
+        padding: 10px;
+        width: 100%;
+        top: 70px;
+        left: 0;
+        margin-left: 23px;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: space-around;
+    }
+    .grid-box{
+        grid-template-columns: auto;
+        justify-content: space-around;
+    }
+    .grid-b{
+        width: 90vw;
+        height: 400px;
+        margin: 0 20px;
+    }
+    .grid-p{
+        height: 200px;
     }
     header{
         margin: 40px 40px;
@@ -145,10 +210,8 @@ footer{
         margin: 50px 40px;
     }
 }
+
 @media only screen and (min-width: 992px) and (max-width: 1500px){
-    .hide-for-desk{
-        display: none;
-    }
     header{
         margin: 40px 60px;
     }
@@ -169,7 +232,6 @@ footer{
         margin: 0px 40px 0px 0px;
     }
     .box{
-        max-width: 500px;
         margin-top: 20px;
     }
     .box1{
@@ -204,7 +266,17 @@ footer{
         order: 4;
         margin-left: 210px;
     }
-    #item6{
-        margin-left: 150px;
+    .hero{
+        width: 50%;
     }
+    .hero1{
+        width: 38%;
+    }
+    .grid-box{
+        margin: 0 50px;
+    }
+    .grid{
+        display: flex;
+    }
+    
 }
